@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo", sans-serif;
+    /* font-family: "Jost", sans-serif; */
+}
+
+header nav {
+    padding: 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+header nav .left {
+    display: flex;
+    align-items: center;
+}
+
+header nav .left h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33.6px;
+    color: #000000;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #000000;
+    padding: 26.5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:nth-child(4) a {
+    background-color: #F5F5F5;
+    color: orange;
+}
+
+
+header nav .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+header nav .right p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    font-family: "Jost", sans-serif;
+}
+
+
+header .bottom_nav {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 60px;
+    padding: 18px 70px;
+
+}
+
+.menu {
+    display: none;
+}
+
+header .bottom_nav p {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Jost", sans-serif;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header .bottom_nav p span {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #9D9D9D;
+}
+
+.FAQs {
+    padding: 56px 70px 0px;
+}
+
+.FAQs h1 {
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    margin-bottom: 50px;
+}
+
+.FAQs .drop_down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.FAQs .drop_down .drop {
+    width: 594px;
+    margin-bottom: 30px;
+    background-color: #F5F5F5;
+    padding: 20px 30px;
+    height: fit-content;
+}
+
+.FAQs .drop_down .drop .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.FAQs .drop_down .drop h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+}
+
+.FAQs .drop_down .drop:nth-child(3) h3 {
+    color: #FF782D;
+
+}
+
+.FAQs .drop_down .drop:nth-child(3) .top {
+    margin-bottom: 20px;
+}
+
+.FAQs .drop_down .drop .content {
+    max-width: 534px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #555555;
+    font-family: "Jost", sans-serif;
+}
+
+.FAQs .last {
+    width: 50%;
+    min-width: 30%;
+}
+
+footer {
+    padding: 50px 70px;
+    background-color: #F5F5F5;
+    flex-wrap: wrap;
+}
+
+footer .cards {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+footer .cards .card .top {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 32px;
+    max-width: 191px;
+}
+
+footer .cards .card .top h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33.6px;
+}
+
+footer .cards .card h3 {
+    margin-bottom: 32px;
+    color: Black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+footer .cards .card p {
+    color: #555555;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    max-width: 341px;
+}
+
+footer .cards .card ul li {
+    list-style: none;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #555;
+
+}
+
+footer .cards .card ul li:hover {
+    color: #FF782D;
+}
+
+.footer_bottom {
+    text-align: center;
+}
+
+@media screen and (max-width:992px) {
+    header nav {
+        padding: 30px 20px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav .right {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header .bottom_nav {
+        padding: 18px 20px;
+    }
+
+    .FAQs {
+        padding: 56px 20px 0px;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
+
+    footer .cards {
+        flex-direction: column;
+    }
+
+    footer .cards .card {
+        margin-bottom: 25px;
+
+    }
+}

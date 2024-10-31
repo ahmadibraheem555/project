@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo", sans-serif;
+}
+
+
+
+header nav {
+    padding: 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+header nav .left {
+    display: flex;
+    align-items: center;
+}
+
+header nav .left h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33.6px;
+    color: #000000;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #000000;
+    padding: 26.5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:nth-child(1) a {
+    color: #FF782D;
+    background-color: #F5F5F5;
+}
+
+header nav .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+header nav .right p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    font-family: "Jost", sans-serif;
+}
+
+.menu {
+    display: none;
+}
+
+header .hero {
+    display: flex;
+
+    padding: 157px 70px;
+    background-image: url(../img/backgroud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+header .hero .content {
+    max-width: 520px;
+}
+
+header .hero .content h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 57.6px;
+    color: #000000;
+    max-width: 520px;
+    margin-bottom: 24px;
+}
+
+header .hero .content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #555555;
+    max-width: 520px;
+    font-family: "Jost", sans-serif;
+    margin-bottom: 20px;
+}
+
+header .hero .content button {
+    background-color: #FF782D;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+    width: 170px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.categories-section,
+.Featured {
+    padding: 0px 70px;
+    margin-top: 70px;
+}
+
+.categories-section .top,
+.Featured .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories-section .top .left h2,
+.Featured .top .left h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+
+}
+
+.categories-section .top .left p,
+.Featured .top .left p {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.categories-section .top button,
+.categories-section .btn button,
+.Featured .top button,
+.Featured .btn button {
+    cursor: pointer;
+    width: 161px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    border: 2px solid #9D9D9D;
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+    background-color: white;
+}
+
+.categories-section .btn button,
+.Featured .btn button {
+    display: none;
+}
+
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-box {
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 234px;
+}
+
+.category-box h3 {
+    font-size: 18px;
+    margin: 24px 0 12px;
+}
+
+.category-box p {
+    color: #555;
+}
+
+.category-box:hover {
+    transform: scale(1.05);
+    color: #FF782D;
+    box-shadow: 0px 4px 20px 0px #0000001A;
+
+}
+
+.Featured .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.Featured .cards .card {
+    width: 385px;
+
+    border-radius: 20px;
+    border: 1px solid #EAEAEA;
+}
+
+.Featured .cards .card .img {
+    position: relative;
+}
+
+.Featured .cards .card .img img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.Featured .cards .card .img button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Jost", sans-serif;
+    width: 114px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.Featured .cards .card .container .content {
+    padding: 20px;
+}
+
+.Featured .cards .card .container .content p {
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Jost", sans-serif;
+}
+
+.Featured .cards .card .container .content p span {
+    color: #555555;
+}
+
+.Featured .cards .card .container .content h4 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 12px;
+}
+
+.Featured .cards .card .container .content .hours {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.Featured .cards .card .container .content .hours .min_box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0px;
+}
+
+.Featured .cards .card .container .content .hours .min_box img {
+    width: 16px;
+    height: 16px;
+}
+
+.Featured .cards .card .container .content .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.Featured .cards .card .container .content .bottom .price {
+    display: flex;
+    gap: 8px;
+}
+
+.Featured .cards .card .container .content .bottom .price del {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+}
+
+.Featured .cards .card .container .content .bottom .price span {
+    color: #55BE24;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+}
+
+.Featured .cards .card .container .content .bottom a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+}
+
+.LearnPress {
+    padding: 0 70px;
+    margin: 70px 0;
+
+}
+
+.LearnPress .container {
+    background-image: url(../img/background_LearnPress.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    max-width: 1232px;
+
+}
+
+.LearnPress .container .content {
+    padding: 50px 54px;
+
+}
+
+.LearnPress .container .content .top p {
+    color: #555555;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    margin-bottom: 12px;
+}
+
+.LearnPress .container .content .top h1 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    margin-bottom: 24px;
+}
+
+.LearnPress .container .content p {
+    color: #555555;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+    margin-bottom: 20px;
+    max-width: 450px;
+}
+
+.LearnPress .container .content .btn button {
+    background-color: #FF782D;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+    width: 170px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+
+}
+
+.Students {
+    padding: 0 70px;
+    margin-bottom: 70px;
+}
+
+.Students .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.Students .cards .card {
+    background-color: #F5F5F5;
+    padding: 40px 0;
+    border-radius: 20px;
+    width: 284px;
+}
+
+.Students .cards .card h1 {
+    color: #FF782D;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38.4px;
+    margin-bottom: 21.5px;
+}
+
+.Students .cards .card p {
+    color: Black;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+}
+
+.grow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+    gap: 40px;
+    margin-bottom: 70px;
+}
+
+
+.grow .right {
+    max-width: 520px;
+    padding: 42.5px 0;
+}
+
+.grow .right h1 {
+    color: Black;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38.4px;
+    margin-bottom: 24px;
+    max-width: 320px;
+}
+
+.grow .right p {
+    color: #555555;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 16px;
+    max-width: 100%;
+}
+
+.grow .right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: Black;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+    margin-bottom: 20px;
+}
+
+.grow .right button {
+    background-color: #FF782D;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+    width: 170px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.Academy {
+    padding: 0 70px;
+    margin-bottom: 70px;
+    
+}
+
+.Academy .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../img/Academy_banner.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    max-width: 1232px;
+    padding: 65px 18px;
+}
+
+.Academy .left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.Academy .btns {
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.Academy .left p {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.Academy .btns button {
+    background-color: transparent;
+    color: #FF782D;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Jost", sans-serif;
+    width: 165px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    border: 2px solid #FF782D;
+    cursor: pointer;
+}
+
+.Academy .btns button.second {
+    width: 219px;
+    background-color: #FF782D;
+    color: white;
+}
+
+footer {
+    padding: 50px 70px;
+    background-color: #F5F5F5;
+    flex-wrap: wrap;
+}
+
+footer .cards {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+footer .cards .card .top {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 32px;
+    max-width: 191px;
+}
+
+footer .cards .card .top h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33.6px;
+}
+
+footer .cards .card h3 {
+    margin-bottom: 32px;
+    color: Black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+footer .cards .card p {
+    color: #555555;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    max-width: 341px;
+}
+
+footer .cards .card ul li  {
+    list-style: none;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #555;
+
+}
+footer .cards .card ul li a {
+    list-style: none;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #555;
+    text-decoration: none;
+
+}
+
+footer .cards .card ul li:hover,footer .cards .card ul li a:hover {
+    color: #FF782D;
+}
+
+.footer_bottom {
+    text-align: center;
+}
+
+@media screen and (max-width:992px) {
+    header nav .menu {
+        display: block;
+    }
+
+    header nav {
+        padding: 0 20px;
+    }
+
+    header nav ul,
+    header nav .right {
+        display: none;
+    }
+
+    header .hero {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 115px 20px;
+        height: max-content;
+        background: linear-gradient(97.77deg, #FFF5BE 0%, #D0F7EA 97.73%);
+        text-align: center;
+
+    }
+
+    header .hero .content .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .categories {
+        justify-content: center;
+    }
+
+    .categories-section .top,
+    .Featured .top {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .categories-section .btn button,
+    .Featured .btn button {
+        display: block;
+    }
+
+    .categories-section .btn,
+    .Featured .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .categories-section .top button,
+    .Featured .top button {
+        display: none
+    }
+
+    .Featured .cards .card {
+        margin: 35px 0px;
+    }
+
+    .Featured {
+        padding: 0 21px;
+    }
+
+    .Featured .cards {
+
+        justify-content: center;
+    }
+
+    .LearnPress {
+        padding: 0px;
+        border-radius: 0px;
+    }
+
+    .LearnPress .container {
+
+        border-radius: 0px;
+        background-position: center left;
+        background: linear-gradient(103.63deg, #B5FFE7 1.83%, #FDC1C1 98.92%);
+
+    }
+
+    .LearnPress .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .LearnPress .container .content {
+        text-align: center;
+
+        padding: 50px 20px;
+
+    }
+
+    .Students {
+        padding: 0;
+    }
+
+    .Students .cards {
+        justify-content: center;
+
+    }
+
+    .Students .cards .card {
+        margin-top: 30px;
+    }
+
+    .grow .grow_img {
+        max-width: 280px;
+        padding: 0px;
+    }
+
+    .grow {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .Academy {
+        padding: 0;
+    }
+
+    .Academy .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: 0px;
+        background-position: top right;
+    }
+
+    .Academy .container .left {
+        margin-bottom: 24px;
+        flex-direction: column;
+    }
+
+    .Academy .btns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Academy .btns button {
+        text-align: center;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
+
+    footer .cards {
+        flex-direction: column;
+    }
+
+    footer .cards .card {
+        margin-bottom: 25px;
+
+    }
+}
